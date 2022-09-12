@@ -28,29 +28,29 @@
                     <div class="item-group">
                        <div class="input-item">
                                <label for="first-name">First Name</label>
-                               <input type="text" id="first-name" name="first-name">
+                               <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20" required>
                        </div>
                         
                         <div class="input-item">
                             <label for="mail">Email</label>
-                            <input type="mail" id="mail" name="Email">
+                            <input type="mail" id="mail" name="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
                         </div>
 
                         <div class="input-item">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" minlenght="6" required>
                         </div>
                     </div>
 
                     <div class="item-group">
                         <div class="input-item">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="name" name="name" minlength="3" maxlength="20" required>
                         </div>
                     
                         <div class="input-item">
                             <label for="phone">Phone</label>
-                            <input type="phone" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" pattern="\+[0-9\s]+">
                         </div>
                     
                         <div class="input-item">

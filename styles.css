@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Lora';
     src: url(assets/Lora/Lora-VariableFont_wght.ttf);
+    font-weight: 100 1000;
   }
 
 body {
@@ -43,14 +44,14 @@ body {
 
 .main-header {
     box-sizing: border-box;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 15rem;
     padding: 3rem;
+    font-weight: bold;
 }
-.main-header > span {
-    position: absolute;
-    bottom: 3rem;
-}
+
 
 .sign-up {
     display: flex;
@@ -86,6 +87,15 @@ label {
 .main-footer {
     padding: 3rem;
     padding-top: 1rem;
+}
+
+button {
+    font-family: Lora;
+    font-size: large;
+    border: solid,  rgb(42, 64, 73);
+    background-color: rgba(135, 206, 235, 1);
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
 }
 
 

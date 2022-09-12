@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+}
+.side {
+    position: relative;
+    flex: 30%;
+    background-color: green;
+    opacity: 30%;
+}
+
+.logo {
+    background-color: red;
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    top: 15vh;
+}
+
+.main {
+    flex: 60%;
+}
+
+.main-header {
+    box-sizing: border-box;
+    position: relative;
+    height: 15rem;
+    padding: 3rem;
+}
+.main-header > span {
+    position: absolute;
+    bottom: 3rem;
+}
+
+.sign-up {
+    position: relative;
+    height: 20rem;
+    background-color: aqua;
+    box-shadow: 4px 4px 4px 4px gray;
+}
+
+.main-footer {
+    padding: 3rem;
+    padding-top: 1rem;
+}
+
+
+

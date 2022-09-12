@@ -1,4 +1,10 @@
-body{
+@font-face {
+    font-family: 'Lora';
+    src: url(assets/Lora/Lora-VariableFont_wght.ttf);
+  }
+
+body {
+    font-family: Lora;
     display: flex;
     margin: 0px;
     height: 100vh;
@@ -21,6 +27,7 @@ body{
 
 .main {
     flex: 60%;
+    background-color: whitesmoke;
 }
 
 .main-header {
@@ -35,10 +42,34 @@ body{
 }
 
 .sign-up {
-    position: relative;
-    height: 20rem;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
     box-shadow: 4px 4px 4px 4px gray;
+    gap: 1rem;
+}
+
+label {
+    font-size: 10pt;
+    color: darkgray;
+}
+
+.form-input{
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .main-footer {

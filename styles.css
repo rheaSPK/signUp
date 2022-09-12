@@ -13,16 +13,27 @@ body {
 .side {
     position: relative;
     flex: 30%;
-    background-color: green;
-    opacity: 30%;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
 }
 
 .logo {
-    background-color: red;
+    display: flex;
+    background-color: rgba(135, 206, 235, 0.4);
     position: absolute;
     height: 20vh;
     width: 100%;
     top: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30pt;
+    opacity: 100%;
 }
 
 .main {

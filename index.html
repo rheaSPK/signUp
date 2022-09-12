@@ -28,34 +28,39 @@
                     <div class="item-group">
                        <div class="input-item">
                                <label for="first-name">First Name</label>
-                               <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20" required>
+                               <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20" placeholder=" " required>
+                               <label class="error" for="first-name">You need 3-20 characters</label>
                        </div>
                         
                         <div class="input-item">
                             <label for="mail">Email</label>
-                            <input type="mail" id="mail" name="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                            <input type="mail" id="mail" name="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder=" " required>
+                            <label class="error" for="email">You need a valid email</label>
                         </div>
 
                         <div class="input-item">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" minlenght="6" required>
+                            <input type="password" id="password" name="password" minlenght="6" placeholder=" " required>
+                            <label class="error" for="password"></label>
                         </div>
                     </div>
 
                     <div class="item-group">
                         <div class="input-item">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" minlength="3" maxlength="20" required>
+                            <input type="text" id="name" name="name" minlength="3" maxlength="20" placeholder=" " required>
+                            <label class="error" for="name">You need 3-20 characters</label>
                         </div>
                     
                         <div class="input-item">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" pattern="\+[0-9\s]+">
+                            <input type="tel" id="phone" name="phone" pattern="\+?[0-9\s]+" minlength="7" placeholder=" ">
+                            <label class="error" for="phone">You need a valid phone number</label>
                         </div>
                     
                         <div class="input-item">
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" name="password">
+                            <input type="password" id="confirm-password" name="password" minlength="6" placeholder=" ">
                         </div>
                     </div>
                 </div>
@@ -65,5 +70,8 @@
             </div>
         </form>
     </div>
+
+    <script>
+    </script>
 </body>
 </html>

@@ -67,6 +67,13 @@ label {
     color: darkgray;
 }
 
+label.error {
+    color: red;
+    width: 100%;
+    word-wrap: break-word;
+    visibility: hidden;
+}
+
 .form-input{
     flex: 1;
     display: flex;
@@ -81,6 +88,7 @@ label {
 .item-group {
     display: flex;
     flex-direction: column;
+    width: 15rem;
     gap: 10px;
 }
 
@@ -98,5 +106,26 @@ button {
     border-radius: 5px;
 }
 
+input {
+    border: 2px solid lightblue;
+  
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+  }
+
+  input:invalid:not(:placeholder-shown) + label {
+    visibility: visible;
+  }
+
+/* Only show valid ring while not focused and if a value is entered */
+/* :empty won't work here as that targets elements that have no childeren. Therefore we abuse :placeholder-shown */
+input:not(:focus):not(:placeholder-shown):valid {
+border-color: green;
+}
 
 

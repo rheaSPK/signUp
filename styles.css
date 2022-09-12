@@ -18,6 +18,20 @@ body {
     background-size: cover;
 }
 
+.side > .footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    color: white;
+    font-size: 10pt;
+    
+}
+
+.side > .footer > a {
+    color: white;
+}
+
 .logo {
     display: flex;
     background-color: rgba(135, 206, 235, 0.4);
@@ -118,7 +132,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border-color: red;
   }
 
-  input:invalid:not(:placeholder-shown) + label {
+  input:invalid:not(:focus):not(:placeholder-shown) + label {
     visibility: visible;
   }
 
